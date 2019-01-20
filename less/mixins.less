@@ -1,1 +1,19 @@
 // Mixins in here
+
+.button-large() {
+    display: inline;
+    margin: 10px auto;
+    background-color: @button-bg;
+    color: @main-bg;
+    border: 1px solid @button-bg;
+    border-radius: 15px;
+    padding: 8px 45px;
+    font-size: 2rem;
+    
+    @media @mobile {
+        padding: 8px 34%;
+    }
+}
+
+
+

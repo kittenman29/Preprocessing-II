@@ -1,21 +1,55 @@
 .home {
 
+  header {
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 1px dashed @silver;
+    justify-content: space-between;
+    align-items: baseline;
+    @media @mobile {
+      // flex-direction: column;
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+  .funBus {
+    margin-bottom: 26px;
+  }
+
+  .secondary-header {
+    @media @mobile {
+      margin: 0 auto;
+      border-bottom: 1px dashed @silver      
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        display: block;
+        width: 95%;
+        margin: 10px auto;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +60,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse; 
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +80,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 95%;
+      margin: 0 auto;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +96,33 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: block;
+      width: 95%;
+      margin: 10px auto;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 95%;
+        margin: 30px auto;
+      }
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+    .btn {
+      .button-large;
+      }
     }
   }
-}// home
+ // home
+
+
+
+
